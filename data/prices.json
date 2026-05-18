@@ -181,7 +181,7 @@
     "kemasan": "0.9 L",
     "harga": "Rp 132.500",
     "kategori": "Cat Tembok",
-    "tier": "Standar"
+    "tier": "Premium"
   },
   {
     "no": 24,
@@ -189,7 +189,7 @@
     "kemasan": "2.5 L",
     "harga": "Rp 255.100",
     "kategori": "Cat Tembok",
-    "tier": "Standar"
+    "tier": "Premium"
   },
   {
     "no": 25,
@@ -197,7 +197,7 @@
     "kemasan": "20 L",
     "harga": "Rp 1.837.500",
     "kategori": "Cat Tembok",
-    "tier": "Standar"
+    "tier": "Premium"
   },
   {
     "no": 26,
@@ -326,5 +326,213 @@
     "harga": "Rp 678.900",
     "kategori": "Cat Tembok",
     "tier": "Ekonomis"
+  },
+  {
+    "no": 42,
+    "produk": "Elastex FiberFlex PU",
+    "kemasan": "1 Kg",
+    "harga": "Rp 328.700",
+    "kategori": "Waterproofing",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 43,
+    "produk": "Elastex FiberFlex PU",
+    "kemasan": "4 Kg",
+    "harga": "Rp 1.479.700",
+    "kategori": "Waterproofing",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 44,
+    "produk": "Elastex Waterproof 3in1",
+    "kemasan": "1 Kg",
+    "harga": "Rp 92.800",
+    "kategori": "Waterproofing",
+    "tier": "Premium"
+  },
+  {
+    "no": 45,
+    "produk": "Elastex Waterproof 3in1",
+    "kemasan": "4 Kg",
+    "harga": "Rp 284.400",
+    "kategori": "Waterproofing",
+    "tier": "Premium"
+  },
+  {
+    "no": 46,
+    "produk": "Elastex Waterproof 3in1",
+    "kemasan": "20 Kg",
+    "harga": "Rp 1.280.500",
+    "kategori": "Waterproofing",
+    "tier": "Premium"
+  },
+  {
+    "no": 47,
+    "produk": "Woodstain",
+    "kemasan": "0.9 L",
+    "harga": "Rp 86.800",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Premium"
+  },
+  {
+    "no": 48,
+    "produk": "Woodstain",
+    "kemasan": "2.5 L",
+    "harga": "Rp 219.200",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Premium"
+  },
+  {
+    "no": 49,
+    "produk": "Woodstain",
+    "kemasan": "20 L",
+    "harga": "Rp 1.666.500",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Premium"
+  },
+  {
+    "no": 50,
+    "produk": "Bodelac 2-in-1 Anti-Karat Gloss",
+    "kemasan": "1 Kg",
+    "harga": "Rp 109.500",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Premium"
+  },
+  {
+    "no": 51,
+    "produk": "Bodelac 2-in-1 Anti-Karat Gloss",
+    "kemasan": "2.7 Kg",
+    "harga": "Rp 266.700",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Premium"
+  },
+  {
+    "no": 52,
+    "produk": "Bodelac 2-in-1 Anti-Karat Gloss",
+    "kemasan": "16 Kg",
+    "harga": "Rp 1.500.700",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Premium"
+  },
+  {
+    "no": 53,
+    "produk": "Nippon 9000 Gloss Finish",
+    "kemasan": "0.9 L",
+    "harga": "Rp 138.100",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 54,
+    "produk": "Nippon 9000 Gloss Finish",
+    "kemasan": "2.5 L",
+    "harga": "Rp 264.600",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 55,
+    "produk": "Nippon 9000 Gloss Finish",
+    "kemasan": "15 L",
+    "harga": "Rp 1.508.200",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 56,
+    "produk": "Timbershade",
+    "kemasan": "0.9 L",
+    "harga": "Rp 173.100",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 57,
+    "produk": "Timbershade",
+    "kemasan": "2.5 L",
+    "harga": "Rp 331.600",
+    "kategori": "Cat Kayu & Besi",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 58,
+    "produk": "Momento Elegant",
+    "kemasan": "1 L",
+    "harga": "Rp 396.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 59,
+    "produk": "Momento Sparkle Silver",
+    "kemasan": "1 L",
+    "harga": "Rp 396.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 60,
+    "produk": "Momento Sparkle Pearl",
+    "kemasan": "1 L",
+    "harga": "Rp 396.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 61,
+    "produk": "Momento Sparkle Gold",
+    "kemasan": "1 L",
+    "harga": "Rp 396.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 62,
+    "produk": "Momento Top Coat Clear Gloss",
+    "kemasan": "1 L",
+    "harga": "Rp 171.800",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 63,
+    "produk": "Momento Top Coat Clear Gloss",
+    "kemasan": "2.5 L",
+    "harga": "Rp 330.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 64,
+    "produk": "Momento Top Coat Clear Matt",
+    "kemasan": "1 L",
+    "harga": "Rp 183.700",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 65,
+    "produk": "Momento Primer",
+    "kemasan": "1 L",
+    "harga": "Rp 182.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 66,
+    "produk": "Sportskote",
+    "kemasan": "5 Kg",
+    "harga": "Rp 355.800",
+    "kategori": "Cat Lapangan",
+    "tier": "Premium"
+  },
+  {
+    "no": 67,
+    "produk": "Sportskote",
+    "kemasan": "22.5 Kg",
+    "harga": "Rp 1.521.300",
+    "kategori": "Cat Lapangan",
+    "tier": "Premium"
   }
 ]
