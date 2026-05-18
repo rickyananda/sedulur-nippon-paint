@@ -47,5 +47,5 @@ post '/order' do
   jumlah  = params[:jumlah]
   nama    = params[:nama]
   msg = "Halo, saya #{nama} ingin memesan:\nProduk: #{produk}\nKemasan: #{kemasan}\nJumlah: #{jumlah}"
-  redirect "https://wa.me/6282142078380?text=#{URI.encode_www_form_component(msg)}"
+  redirect "https://wa.me/6287843954886?text=#{URI.encode_www_form_component(msg)}"
 end
