@@ -1,69 +1,354 @@
 [
-  {"no":1,"produk":"Weatherbond Advance-16 Brilliant White","kemasan":"0.9L","harga":"Rp 526.900","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":2,"produk":"Weatherbond Advance-16 Brilliant White","kemasan":"20L","harga":"Rp 3.793.200","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":3,"produk":"Weatherbond Ultimate Brilliant White","kemasan":"0.9L","harga":"Rp 535.100","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":4,"produk":"Weatherbond Ultimate Brilliant White","kemasan":"2.5L","harga":"Rp 487.600","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":5,"produk":"Weatherbond Ultimate Brilliant White","kemasan":"15L","harga":"Rp 2.889.200","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":6,"produk":"Weatherbond Solareflect Brilliant White","kemasan":"0.9L","harga":"Rp 253.800","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":7,"produk":"Weatherbond Solareflect Brilliant White","kemasan":"2.5L","harga":"Rp 487.600","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":8,"produk":"Weatherbond Solareflect Brilliant White","kemasan":"15L","harga":"Rp 3.511.200","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":9,"produk":"Weatherbond Max Brilliant White","kemasan":"0.9L","harga":"Rp 428.900","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":10,"produk":"Weatherbond Max Brilliant White","kemasan":"20L","harga":"Rp 3.088.300","kategori":"Cat Tembok","tier":"Ultra Premium"},
-  {"no":11,"produk":"Weatherbond Brilliant White","kemasan":"0.9L","harga":"Rp 200.400","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":12,"produk":"Weatherbond Brilliant White","kemasan":"2.5L","harga":"Rp 384.600","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":13,"produk":"Weatherbond Brilliant White","kemasan":"20L","harga":"Rp 2.768.200","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":14,"produk":"Spot-less Plus Matt Brilliant White","kemasan":"0.9L","harga":"Rp 129.700","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":15,"produk":"Spot-less Plus Matt Brilliant White","kemasan":"2.5L","harga":"Rp 247.200","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":16,"produk":"Spot-less Plus Matt Brilliant White","kemasan":"20L","harga":"Rp 1.780.500","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":17,"produk":"Spot-less Plus Sheen Brilliant White","kemasan":"0.9L","harga":"Rp 146.900","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":18,"produk":"Spot-less Plus Sheen Brilliant White","kemasan":"2.5L","harga":"Rp 282.100","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":19,"produk":"Spot-less Plus Sheen Brilliant White","kemasan":"20L","harga":"Rp 2.032.800","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":20,"produk":"Spot-less Brilliant White","kemasan":"0.9L","harga":"Rp 389.100","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":21,"produk":"Spot-less Brilliant White","kemasan":"20L","harga":"Rp 2.801.100","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":22,"produk":"Easywash Brilliant White","kemasan":"0.9L","harga":"Rp 199.500","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":23,"produk":"Easywash Brilliant White","kemasan":"2.5L","harga":"Rp 380.700","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":24,"produk":"Easywash Brilliant White","kemasan":"20L","harga":"Rp 2.741.800","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":25,"produk":"Flaw-less Brilliant White","kemasan":"0.9L","harga":"Rp 193.900","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":26,"produk":"Flaw-less Brilliant White","kemasan":"2.5L","harga":"Rp 370.200","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":27,"produk":"Flaw-less Brilliant White","kemasan":"20L","harga":"Rp 2.665.600","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":28,"produk":"Satin Glo Brilliant White","kemasan":"0.9L","harga":"Rp 200.300","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":29,"produk":"Satin Glo Brilliant White","kemasan":"2.5L","harga":"Rp 383.700","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":30,"produk":"Satin Glo Brilliant White","kemasan":"20L","harga":"Rp 2.763.600","kategori":"Cat Tembok","tier":"Premium"},
-  {"no":31,"produk":"Vinilex Gloss 300 White","kemasan":"2.5L","harga":"Rp 192.500","kategori":"Cat Tembok","tier":"Standar"},
-  {"no":32,"produk":"Vinilex Gloss 300 White","kemasan":"12.5L","harga":"Rp 915.100","kategori":"Cat Tembok","tier":"Standar"},
-  {"no":33,"produk":"Vinilex Exterior","kemasan":"1.3Kg","harga":"Rp 263.800","kategori":"Cat Tembok","tier":"Standar"},
-  {"no":34,"produk":"Vinilex Exterior","kemasan":"4.5Kg","harga":"Rp 1.253.400","kategori":"Cat Tembok","tier":"Standar"},
-  {"no":35,"produk":"Vinilex (Silver-Ion)","kemasan":"1.3Kg","harga":"Rp 226.800","kategori":"Cat Tembok","tier":"Standar"},
-  {"no":36,"produk":"Vinilex (Silver-Ion)","kemasan":"4.5Kg","harga":"Rp 1.077.900","kategori":"Cat Tembok","tier":"Standar"},
-  {"no":37,"produk":"Vinilex Tinting Pastel","kemasan":"1Kg","harga":"Rp 79.000","kategori":"Cat Tembok","tier":"Ekonomis"},
-  {"no":38,"produk":"Vinilex Tinting Pastel","kemasan":"4Kg","harga":"Rp 199.400","kategori":"Cat Tembok","tier":"Ekonomis"},
-  {"no":39,"produk":"Vinilex Tinting Pastel","kemasan":"20Kg","harga":"Rp 946.900","kategori":"Cat Tembok","tier":"Ekonomis"},
-  {"no":40,"produk":"Matex Emulsion Pastel","kemasan":"1.3Kg","harga":"Rp 144.700","kategori":"Cat Tembok","tier":"Ekonomis"},
-  {"no":41,"produk":"Matex Emulsion Pastel","kemasan":"4.5Kg","harga":"Rp 610.700","kategori":"Cat Tembok","tier":"Ekonomis"},
-  {"no":42,"produk":"Elastex FiberFlex PU Pastel","kemasan":"1Kg","harga":"Rp 328.700","kategori":"Waterproofing","tier":"Ultra Premium"},
-  {"no":43,"produk":"Elastex FiberFlex PU Pastel","kemasan":"4Kg","harga":"Rp 1.479.700","kategori":"Waterproofing","tier":"Ultra Premium"},
-  {"no":44,"produk":"Elastex Waterproof 3in1 Pastel","kemasan":"1Kg","harga":"Rp 92.800","kategori":"Waterproofing","tier":"Premium"},
-  {"no":45,"produk":"Elastex Waterproof 3in1 Pastel","kemasan":"4Kg","harga":"Rp 284.400","kategori":"Waterproofing","tier":"Premium"},
-  {"no":46,"produk":"Elastex Waterproof 3in1 Pastel","kemasan":"20Kg","harga":"Rp 1.280.500","kategori":"Waterproofing","tier":"Premium"},
-  {"no":47,"produk":"Woodstain Pastel","kemasan":"0.9L","harga":"Rp 86.800","kategori":"Cat Kayu & Besi","tier":"Premium"},
-  {"no":48,"produk":"Woodstain Pastel","kemasan":"2.5L","harga":"Rp 219.200","kategori":"Cat Kayu & Besi","tier":"Premium"},
-  {"no":49,"produk":"Woodstain Pastel","kemasan":"20L","harga":"Rp 1.666.500","kategori":"Cat Kayu & Besi","tier":"Premium"},
-  {"no":50,"produk":"Bodelac 2-in-1 Anti-Karat Gloss Pastel","kemasan":"1Kg","harga":"Rp 109.500","kategori":"Cat Kayu & Besi","tier":"Premium"},
-  {"no":51,"produk":"Bodelac 2-in-1 Anti-Karat Gloss Pastel","kemasan":"2.7Kg","harga":"Rp 266.700","kategori":"Cat Kayu & Besi","tier":"Premium"},
-  {"no":52,"produk":"Bodelac 2-in-1 Anti-Karat Gloss Pastel","kemasan":"16Kg","harga":"Rp 1.500.700","kategori":"Cat Kayu & Besi","tier":"Premium"},
-  {"no":53,"produk":"Nippon 9000 Gloss Finish Pastel","kemasan":"0.9L","harga":"Rp 138.100","kategori":"Cat Kayu & Besi","tier":"Ultra Premium"},
-  {"no":54,"produk":"Nippon 9000 Gloss Finish Pastel","kemasan":"2.5L","harga":"Rp 264.600","kategori":"Cat Kayu & Besi","tier":"Ultra Premium"},
-  {"no":55,"produk":"Nippon 9000 Gloss Finish Pastel","kemasan":"15L","harga":"Rp 1.508.200","kategori":"Cat Kayu & Besi","tier":"Ultra Premium"},
-  {"no":56,"produk":"Timbershade Pastel","kemasan":"0.9L","harga":"Rp 173.100","kategori":"Cat Kayu & Besi","tier":"Ultra Premium"},
-  {"no":57,"produk":"Timbershade Pastel","kemasan":"2.5L","harga":"Rp 331.600","kategori":"Cat Kayu & Besi","tier":"Ultra Premium"},
-  {"no":58,"produk":"Momento Elegant","kemasan":"1L","harga":"Rp 396.300","kategori":"Cat Special Effect","tier":"Ultra Premium"},
-  {"no":59,"produk":"Momento Sparkle Silver","kemasan":"1L","harga":"Rp 396.300","kategori":"Cat Special Effect","tier":"Ultra Premium"},
-  {"no":60,"produk":"Momento Sparkle Pearl","kemasan":"1L","harga":"Rp 396.300","kategori":"Cat Special Effect","tier":"Ultra Premium"},
-  {"no":61,"produk":"Momento Sparkle Gold","kemasan":"1L","harga":"Rp 396.300","kategori":"Cat Special Effect","tier":"Ultra Premium"},
-  {"no":62,"produk":"Momento Top Coat Clear Gloss","kemasan":"1L","harga":"Rp 171.800","kategori":"Cat Special Effect","tier":"Ultra Premium"},
-  {"no":63,"produk":"Momento Top Coat Clear Gloss","kemasan":"2.5L","harga":"Rp 330.300","kategori":"Cat Special Effect","tier":"Ultra Premium"},
-  {"no":64,"produk":"Momento Top Coat Clear Matt","kemasan":"1L","harga":"Rp 183.700","kategori":"Cat Special Effect","tier":"Ultra Premium"},
-  {"no":65,"produk":"Momento Primer","kemasan":"1L","harga":"Rp 182.300","kategori":"Cat Special Effect","tier":"Ultra Premium"},
-  {"no":66,"produk":"Sportskote Pastel","kemasan":"5Kg","harga":"Rp 355.800","kategori":"Cat Lapangan","tier":"Premium"},
-  {"no":67,"produk":"Sportskote Pastel","kemasan":"22.5Kg","harga":"Rp 1.521.300","kategori":"Cat Lapangan","tier":"Premium"}
+  {
+    "no": 1,
+    "produk": "Weatherbond Advance-16 Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 526.900",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 2,
+    "produk": "Weatherbond Advance-16 Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 3.793.200",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 3,
+    "produk": "Weatherbond Ultimate Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 535.100",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 4,
+    "produk": "Weatherbond Ultimate Brilliant White",
+    "kemasan": "2.5L",
+    "harga": "Rp 487.600",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 5,
+    "produk": "Weatherbond Ultimate Brilliant White",
+    "kemasan": "15L",
+    "harga": "Rp 2.889.200",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 6,
+    "produk": "Weatherbond Solareflect Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 253.800",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 7,
+    "produk": "Weatherbond Solareflect Brilliant White",
+    "kemasan": "2.5L",
+    "harga": "Rp 487.600",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 8,
+    "produk": "Weatherbond Solareflect Brilliant White",
+    "kemasan": "15L",
+    "harga": "Rp 3.511.200",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 9,
+    "produk": "Weatherbond Max Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 428.900",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 10,
+    "produk": "Weatherbond Max Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 3.088.300",
+    "kategori": "Cat Tembok",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 11,
+    "produk": "Weatherbond Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 200.400",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 12,
+    "produk": "Weatherbond Brilliant White",
+    "kemasan": "2.5L",
+    "harga": "Rp 384.600",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 13,
+    "produk": "Weatherbond Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 2.768.200",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 14,
+    "produk": "Spot-less Plus Matt Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 129.700",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 15,
+    "produk": "Spot-less Plus Matt Brilliant White",
+    "kemasan": "2.5L",
+    "harga": "Rp 247.200",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 16,
+    "produk": "Spot-less Plus Matt Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 1.780.500",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 17,
+    "produk": "Spot-less Plus Sheen Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 146.900",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 18,
+    "produk": "Spot-less Plus Sheen Brilliant White",
+    "kemasan": "2.5L",
+    "harga": "Rp 282.100",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 19,
+    "produk": "Spot-less Plus Sheen Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 2.032.800",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 20,
+    "produk": "Spot-less Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 389.100",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 21,
+    "produk": "Spot-less Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 2.801.100",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 22,
+    "produk": "Easywash Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 199.500",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 23,
+    "produk": "Easywash Brilliant White",
+    "kemasan": "2.5L",
+    "harga": "Rp 380.700",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 24,
+    "produk": "Easywash Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 2.741.800",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 25,
+    "produk": "Flaw-less Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 193.900",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 26,
+    "produk": "Flaw-less Brilliant White",
+    "kemasan": "2.5L",
+    "harga": "Rp 370.200",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 27,
+    "produk": "Flaw-less Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 2.665.600",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 28,
+    "produk": "Satin Glo Brilliant White",
+    "kemasan": "0.9L",
+    "harga": "Rp 200.300",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 29,
+    "produk": "Satin Glo Brilliant White",
+    "kemasan": "2.5L",
+    "harga": "Rp 383.700",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 30,
+    "produk": "Satin Glo Brilliant White",
+    "kemasan": "20L",
+    "harga": "Rp 2.763.600",
+    "kategori": "Cat Tembok",
+    "tier": "Premium"
+  },
+  {
+    "no": 31,
+    "produk": "Vinilex Gloss 300 White",
+    "kemasan": "2.5L",
+    "harga": "Rp 192.500",
+    "kategori": "Cat Tembok",
+    "tier": "Standar"
+  },
+  {
+    "no": 32,
+    "produk": "Vinilex Gloss 300 White",
+    "kemasan": "12.5L",
+    "harga": "Rp 915.100",
+    "kategori": "Cat Tembok",
+    "tier": "Standar"
+  },
+  {
+    "no": 33,
+    "produk": "Vinilex Exterior",
+    "kemasan": "1.3Kg",
+    "harga": "Rp 263.800",
+    "kategori": "Cat Tembok",
+    "tier": "Standar"
+  },
+  {
+    "no": 34,
+    "produk": "Vinilex Exterior",
+    "kemasan": "4.5Kg",
+    "harga": "Rp 1.253.400",
+    "kategori": "Cat Tembok",
+    "tier": "Standar"
+  },
+  {
+    "no": 35,
+    "produk": "Vinilex (Silver-Ion)",
+    "kemasan": "1.3Kg",
+    "harga": "Rp 226.800",
+    "kategori": "Cat Tembok",
+    "tier": "Standar"
+  },
+  {
+    "no": 36,
+    "produk": "Vinilex (Silver-Ion)",
+    "kemasan": "4.5Kg",
+    "harga": "Rp 1.077.900",
+    "kategori": "Cat Tembok",
+    "tier": "Standar"
+  },
+  {
+    "no": 37,
+    "produk": "Momento Elegant",
+    "kemasan": "1L",
+    "harga": "Rp 396.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 38,
+    "produk": "Momento Sparkle Silver",
+    "kemasan": "1L",
+    "harga": "Rp 396.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 39,
+    "produk": "Momento Sparkle Pearl",
+    "kemasan": "1L",
+    "harga": "Rp 396.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 40,
+    "produk": "Momento Sparkle Gold",
+    "kemasan": "1L",
+    "harga": "Rp 396.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 41,
+    "produk": "Momento Top Coat Clear Gloss",
+    "kemasan": "1L",
+    "harga": "Rp 171.800",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 42,
+    "produk": "Momento Top Coat Clear Gloss",
+    "kemasan": "2.5L",
+    "harga": "Rp 330.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 43,
+    "produk": "Momento Top Coat Clear Matt",
+    "kemasan": "1L",
+    "harga": "Rp 183.700",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  },
+  {
+    "no": 44,
+    "produk": "Momento Primer",
+    "kemasan": "1L",
+    "harga": "Rp 182.300",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium"
+  }
 ]
