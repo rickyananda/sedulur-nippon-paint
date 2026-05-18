@@ -1,0 +1,256 @@
+<style>
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--red-dark) 0%, var(--red) 50%, #e53935 100%);
+  color: white; padding: 6rem 1.5rem 5rem; text-align: center; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-content { position: relative; max-width: 700px; margin: 0 auto; }
+.hero-badge {
+  display: inline-block; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.3);
+  padding: .4rem 1rem; border-radius: 999px; font-size: .8rem; font-weight: 500; margin-bottom: 1.5rem;
+}
+.hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.15; margin-bottom: 1rem; }
+.hero h1 span { color: var(--gold); }
+.hero p { font-size: 1.1rem; opacity: .9; margin-bottom: 2.5rem; line-height: 1.7; }
+.hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero-stats {
+  display: flex; gap: 2.5rem; justify-content: center; margin-top: 3.5rem;
+  padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,.2); flex-wrap: wrap;
+}
+.hero-stat { text-align: center; }
+.hero-stat strong { display: block; font-size: 1.8rem; font-weight: 800; color: var(--gold); }
+.hero-stat span { font-size: .82rem; opacity: .8; }
+
+/* KEUNGGULAN */
+.keunggulan { background: var(--gray-50); }
+.keunggulan-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+  max-width: 1100px; margin: 0 auto;
+}
+.keunggulan-card {
+  background: white; border-radius: var(--radius); padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200);
+  transition: all .3s;
+}
+.keunggulan-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--red-light); }
+.keunggulan-icon {
+  width: 52px; height: 52px; border-radius: 12px;
+  background: linear-gradient(135deg, var(--red), var(--red-light));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; margin-bottom: 1rem;
+}
+.keunggulan-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+.keunggulan-card p { font-size: .85rem; color: var(--gray-600); line-height: 1.6; }
+
+/* PRODUK UNGGULAN */
+.produk-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem;
+  max-width: 1100px; margin: 0 auto;
+}
+.produk-card {
+  background: white; border-radius: var(--radius); padding: 1.5rem;
+  box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200);
+  transition: all .3s; cursor: pointer;
+}
+.produk-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.produk-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.produk-card h3 { font-size: .95rem; font-weight: 700; margin-bottom: .4rem; }
+.produk-card p { font-size: .8rem; color: var(--gray-600); line-height: 1.5; margin-bottom: .75rem; }
+.produk-card .kemasan { font-size: .75rem; color: var(--gray-400); }
+
+/* PROMO BANNER */
+.promo-banner {
+  background: linear-gradient(135deg, #f57f17, var(--gold), #ffca28);
+  padding: 3.5rem 1.5rem; text-align: center;
+}
+.promo-banner h2 { font-size: 2rem; font-weight: 800; color: var(--gray-900); margin-bottom: .75rem; }
+.promo-banner p { font-size: 1rem; color: var(--gray-800); margin-bottom: 2rem; }
+
+/* HARGA PREVIEW */
+.harga-preview { background: white; }
+.harga-table-wrap { max-width: 1100px; margin: 0 auto; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+thead tr { background: var(--red); color: white; }
+thead th { padding: .85rem 1rem; text-align: left; font-weight: 600; }
+tbody tr { border-bottom: 1px solid var(--gray-200); transition: background .15s; }
+tbody tr:hover { background: var(--gray-50); }
+tbody td { padding: .75rem 1rem; }
+.tier-badge { font-size: .7rem; font-weight: 600; padding: .2rem .6rem; border-radius: 999px; }
+.tier-ultra { background: #fff3e0; color: #e65100; }
+.tier-premium { background: #e8f5e9; color: #2e7d32; }
+.tier-standar { background: #e3f2fd; color: #1565c0; }
+.tier-ekonomis { background: #f3e5f5; color: #6a1b9a; }
+
+/* KONTAK STRIP */
+.kontak-strip {
+  background: var(--red); color: white; padding: 3rem 1.5rem; text-align: center;
+}
+.kontak-strip h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: .5rem; }
+.kontak-strip p { opacity: .9; margin-bottom: 2rem; }
+.kontak-strip-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .keunggulan-grid { grid-template-columns: repeat(2, 1fr); }
+  .produk-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .keunggulan-grid { grid-template-columns: 1fr; }
+  .produk-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-stats { gap: 1.5rem; }
+}
+</style>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">🏆 Dealer Resmi Nippon Paint Surabaya</div>
+    <h1>Cat Berkualitas,<br><span>Harga Terbaik</span> di Surabaya</h1>
+    <p>Toko SEDULUR menyediakan lengkap produk Nippon Paint — cat tembok, waterproofing, cat kayu & besi. Produk 100% original, harga kompetitif, pengiriman cepat.</p>
+    <div class="hero-btns">
+      <a href="/produk" class="btn btn-gold">🎨 Lihat Produk</a>
+      <a href="https://wa.me/6282142078380" class="btn btn-outline" target="_blank">💬 Order WhatsApp</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>100%</strong><span>Produk Original</span></div>
+      <div class="hero-stat"><strong>50+</strong><span>Produk Tersedia</span></div>
+      <div class="hero-stat"><strong>16 Thn</strong><span>Garansi Terlama</span></div>
+      <div class="hero-stat"><strong>Gratis</strong><span>Konsultasi Warna</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="section keunggulan">
+  <div class="container" style="text-align:center; margin-bottom:2.5rem;">
+    <h2 class="section-title fade-in">Kenapa Beli di SEDULUR?</h2>
+    <p class="section-sub fade-in">Kami memberikan pelayanan terbaik untuk kebutuhan cat Anda</p>
+  </div>
+  <div class="keunggulan-grid">
+    <div class="keunggulan-card fade-in">
+      <div class="keunggulan-icon">✅</div>
+      <h3>Produk 100% Asli</h3>
+      <p>Dealer resmi Nippon Paint. Semua produk dijamin original langsung dari distributor.</p>
+    </div>
+    <div class="keunggulan-card fade-in">
+      <div class="keunggulan-icon">💰</div>
+      <h3>Harga Bersaing</h3>
+      <p>Harga kompetitif langsung dari distributor. Tersedia harga khusus untuk pembelian partai.</p>
+    </div>
+    <div class="keunggulan-card fade-in">
+      <div class="keunggulan-icon">🚚</div>
+      <h3>Pengiriman Cepat</h3>
+      <p>Melayani pengiriman ke seluruh wilayah Surabaya dan sekitarnya dengan cepat.</p>
+    </div>
+    <div class="keunggulan-card fade-in">
+      <div class="keunggulan-icon">🎨</div>
+      <h3>Jasa Tinting</h3>
+      <p>Layanan pencampuran warna dengan mesin tinting profesional. Ribuan pilihan warna.</p>
+    </div>
+    <div class="keunggulan-card fade-in">
+      <div class="keunggulan-icon">📋</div>
+      <h3>Konsultasi Gratis</h3>
+      <p>Tim kami siap membantu memilih produk dan warna yang tepat untuk kebutuhan Anda.</p>
+    </div>
+    <div class="keunggulan-card fade-in">
+      <div class="keunggulan-icon">🏢</div>
+      <h3>Melayani Proyek</h3>
+      <p>Siap supply proyek besar dengan harga khusus dan pengiriman terjadwal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUK UNGGULAN -->
+<section class="section" style="background:white;">
+  <div class="container" style="text-align:center; margin-bottom:2.5rem;">
+    <h2 class="section-title fade-in">Produk Unggulan</h2>
+    <p class="section-sub fade-in">Pilihan produk terbaik dari Nippon Paint</p>
+  </div>
+  <div class="produk-grid">
+    <% @products.first(8).each do |p| %>
+    <a href="/produk" class="produk-card fade-in" style="text-decoration:none;color:inherit;">
+      <div class="produk-icon"><%= p['icon'] %></div>
+      <% tier_class = p['tier'].downcase.gsub(' ','') %>
+      <span class="tier-badge tier-<%= tier_class == 'ultrapremium' ? 'ultra' : tier_class %>"><%= p['tier'] %></span>
+      <h3 style="margin-top:.5rem;"><%= p['nama'] %></h3>
+      <p><%= p['deskripsi'][0..80] %>...</p>
+      <div class="kemasan">📦 <%= p['kemasan'].join(' | ') %></div>
+    </a>
+    <% end %>
+  </div>
+  <div style="text-align:center; margin-top:2.5rem;">
+    <a href="/produk" class="btn btn-red fade-in">Lihat Semua Produk →</a>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<section class="promo-banner">
+  <h2 class="fade-in">🔥 PROMO BULAN INI! 🔥</h2>
+  <p class="fade-in">Dapatkan diskon spesial untuk pembelian produk Nippon Paint tertentu!<br>Hubungi kami sekarang untuk info promo terbaru.</p>
+  <div class="kontak-strip-btns">
+    <a href="https://wa.me/6282142078380?text=Halo,%20saya%20ingin%20tanya%20promo%20Nippon%20Paint" class="btn btn-red fade-in" target="_blank">💬 Tanya Promo via WA</a>
+    <a href="tel:0313983518" class="btn btn-outline fade-in" style="color:#333;border-color:#333;">📞 Telepon Sekarang</a>
+  </div>
+</section>
+
+<!-- HARGA PREVIEW -->
+<section class="section harga-preview">
+  <div class="container" style="text-align:center; margin-bottom:2.5rem;">
+    <h2 class="section-title fade-in">Daftar Harga Terbaru</h2>
+    <p class="section-sub fade-in">Update 11 Mei 2026 · Harga Eceran Terendah (Incl. PPN 11%)</p>
+  </div>
+  <div class="harga-table-wrap fade-in">
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Produk</th>
+          <th>Kemasan</th>
+          <th>Harga</th>
+          <th>Kategori</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% PRICES.first(15).each do |p| %>
+        <tr>
+          <td><%= p['no'] %></td>
+          <td><strong><%= p['produk'] %></strong></td>
+          <td><%= p['kemasan'] %></td>
+          <td style="font-weight:600;color:var(--red);"><%= p['harga'] %></td>
+          <td>
+            <% tier = p['tier'].downcase.gsub(' ','') %>
+            <span class="tier-badge tier-<%= tier == 'ultrapremium' ? 'ultra' : tier %>"><%= p['tier'] %></span>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div style="text-align:center; margin-top:2rem;">
+    <a href="/harga" class="btn btn-red fade-in">Lihat Daftar Harga Lengkap →</a>
+  </div>
+</section>
+
+<!-- KONTAK STRIP -->
+<section class="kontak-strip">
+  <h2 class="fade-in">Siap Membantu Anda!</h2>
+  <p class="fade-in">Hubungi kami sekarang untuk konsultasi, pemesanan, atau info harga terbaru</p>
+  <div class="kontak-strip-btns">
+    <a href="https://wa.me/6282142078380" class="btn btn-wa fade-in" target="_blank">💬 WhatsApp 0821-4207-8380</a>
+    <a href="https://wa.me/6282142078381" class="btn btn-wa fade-in" target="_blank">💬 WhatsApp 0821-4207-8381</a>
+    <a href="tel:0313983518" class="btn btn-outline fade-in">📞 (031) 398 3518</a>
+  </div>
+</section>
+
+<script>
+  // Re-run observer after page load
+  setTimeout(() => {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+  }, 100);
+</script>

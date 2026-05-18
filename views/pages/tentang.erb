@@ -1,0 +1,77 @@
+<style>
+.page-hero { background: linear-gradient(135deg, var(--red-dark), var(--red)); color: white; padding: 3.5rem 1.5rem; text-align: center; }
+.page-hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: .5rem; }
+.page-hero p { opacity: .85; }
+.tentang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1100px; margin: 0 auto; }
+.tentang-text h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; }
+.tentang-text p { color: var(--gray-600); line-height: 1.8; margin-bottom: 1rem; font-size: .95rem; }
+.tentang-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+.tentang-stat { background: var(--gray-50); border-radius: var(--radius); padding: 1.25rem; text-align: center; border: 1px solid var(--gray-200); }
+.tentang-stat strong { display: block; font-size: 1.8rem; font-weight: 800; color: var(--red); }
+.tentang-stat span { font-size: .82rem; color: var(--gray-600); }
+.tentang-visual { background: linear-gradient(135deg, var(--red-dark), var(--red)); border-radius: var(--radius-lg); padding: 3rem; color: white; text-align: center; }
+.tentang-visual .big-icon { font-size: 5rem; margin-bottom: 1rem; }
+.tentang-visual h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: .5rem; }
+.tentang-visual p { opacity: .85; font-size: .9rem; line-height: 1.7; }
+.nilai-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1100px; margin: 0 auto; }
+.nilai-card { background: white; border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200); text-align: center; }
+.nilai-card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.nilai-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+.nilai-card p { font-size: .85rem; color: var(--gray-600); line-height: 1.6; }
+@media (max-width: 768px) {
+  .tentang-grid { grid-template-columns: 1fr; }
+  .nilai-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) { .nilai-grid { grid-template-columns: 1fr; } }
+</style>
+
+<section class="page-hero">
+  <h1>🏪 Tentang Kami</h1>
+  <p>Dealer Resmi Nippon Paint Surabaya yang terpercaya</p>
+</section>
+
+<section class="section" style="background:white;">
+  <div class="tentang-grid">
+    <div class="tentang-text fade-in">
+      <h2>Toko SEDULUR — Mitra Cat Terpercaya Anda</h2>
+      <p>Toko SEDULUR adalah dealer resmi Nippon Paint yang berlokasi di Surabaya, Jawa Timur. Kami berkomitmen untuk menyediakan produk cat berkualitas tinggi dengan harga yang kompetitif dan pelayanan yang profesional.</p>
+      <p>Sebagai dealer resmi, kami menjamin keaslian semua produk yang kami jual. Mulai dari cat tembok eksterior dan interior, waterproofing, cat kayu dan besi, hingga cat special effect — semua tersedia lengkap di toko kami.</p>
+      <p>Kami juga menyediakan layanan jasa tinting dengan mesin profesional, konsultasi warna gratis, dan siap melayani kebutuhan proyek besar maupun kecil.</p>
+      <div class="tentang-stats">
+        <div class="tentang-stat"><strong>100%</strong><span>Produk Original</span></div>
+        <div class="tentang-stat"><strong>50+</strong><span>Varian Produk</span></div>
+        <div class="tentang-stat"><strong>Resmi</strong><span>Dealer Nippon Paint</span></div>
+        <div class="tentang-stat"><strong>Cepat</strong><span>Pengiriman Surabaya</span></div>
+      </div>
+    </div>
+    <div class="tentang-visual fade-in">
+      <div class="big-icon">🎨</div>
+      <h3>Nippon Paint<br>Authorized Dealer</h3>
+      <p>Kami adalah dealer resmi yang telah dipercaya oleh PT Nipsea Paint and Chemicals untuk mendistribusikan produk Nippon Paint di wilayah Surabaya dan sekitarnya.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--gray-50);">
+  <div style="text-align:center; margin-bottom:2.5rem;">
+    <h2 class="section-title fade-in">Nilai-Nilai Kami</h2>
+    <p class="section-sub fade-in">Komitmen kami untuk pelayanan terbaik</p>
+  </div>
+  <div class="nilai-grid">
+    <div class="nilai-card fade-in">
+      <div class="icon">🏆</div>
+      <h3>Kualitas Terjamin</h3>
+      <p>Semua produk 100% original dari Nippon Paint. Tidak ada produk palsu atau KW di toko kami.</p>
+    </div>
+    <div class="nilai-card fade-in">
+      <div class="icon">🤝</div>
+      <h3>Pelayanan Prima</h3>
+      <p>Tim kami siap membantu dengan ramah dan profesional, dari konsultasi hingga pengiriman.</p>
+    </div>
+    <div class="nilai-card fade-in">
+      <div class="icon">💡</div>
+      <h3>Solusi Tepat</h3>
+      <p>Kami membantu Anda memilih produk yang tepat sesuai kebutuhan dan anggaran.</p>
+    </div>
+  </div>
+</section>

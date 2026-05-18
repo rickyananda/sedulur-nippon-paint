@@ -1,0 +1,77 @@
+<style>
+.harga-hero { background: linear-gradient(135deg, var(--red-dark), var(--red)); color: white; padding: 3.5rem 1.5rem; text-align: center; }
+.harga-hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: .5rem; }
+.harga-hero p { opacity: .85; font-size: 1rem; }
+.filter-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.filter-tab {
+  padding: .5rem 1.1rem; border-radius: 8px; border: 2px solid var(--gray-200);
+  background: white; font-size: .85rem; font-weight: 500; cursor: pointer;
+  transition: all .2s; text-decoration: none; color: var(--gray-800);
+}
+.filter-tab:hover, .filter-tab.active { background: var(--red); color: white; border-color: var(--red); }
+.harga-note { background: #fff8e1; border: 1px solid #ffe082; border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: .85rem; color: #5d4037; }
+</style>
+
+<section class="harga-hero">
+  <h1>📋 Daftar Harga</h1>
+  <p>Update 11 Mei 2026 · Harga Eceran Terendah (HET) · Incl. PPN 11%</p>
+</section>
+
+<section class="section" style="background:var(--gray-50);">
+  <div class="container">
+    <div class="harga-note">
+      ℹ️ <strong>Catatan:</strong> Harga di atas adalah Harga Eceran Terendah (HET) berlaku nasional per 11 Mei 2026. Harga dapat berubah sewaktu-waktu. Hubungi kami untuk harga terkini dan harga khusus proyek.
+    </div>
+
+    <div class="filter-tabs">
+      <% cats = ['Semua', 'Cat Tembok', 'Waterproofing', 'Cat Kayu & Besi', 'Cat Special Effect', 'Cat Lapangan'] %>
+      <% cats.each do |cat| %>
+        <% active = (@category == 'semua' && cat == 'Semua') || @category == cat.downcase %>
+        <a href="/harga?kategori=<%= cat == 'Semua' ? 'semua' : cat.downcase %>"
+           class="filter-tab <%= active ? 'active' : '' %>"><%= cat %></a>
+      <% end %>
+    </div>
+
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Produk</th>
+            <th>Kemasan</th>
+            <th>Harga (HET)</th>
+            <th>Kategori</th>
+            <th>Tier</th>
+            <th>Order</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% filtered = @category == 'semua' ? @prices : @prices.select { |p| p['kategori'].downcase.include?(@category.downcase) } %>
+          <% filtered.each_with_index do |p, i| %>
+          <tr>
+            <td><%= i+1 %></td>
+            <td><strong><%= p['produk'] %></strong></td>
+            <td><%= p['kemasan'] %></td>
+            <td style="font-weight:700;color:var(--red);white-space:nowrap;"><%= p['harga'] %></td>
+            <td><%= p['kategori'] %></td>
+            <td>
+              <% tier = p['tier'].downcase.gsub(' ','') %>
+              <span class="tier-badge tier-<%= tier == 'ultrapremium' ? 'ultra' : tier %>"><%= p['tier'] %></span>
+            </td>
+            <td>
+              <a href="https://wa.me/6282142078380?text=Halo%2C%20saya%20ingin%20memesan%20<%= URI.encode_www_form_component(p['produk']) %>%20kemasan%20<%= URI.encode_www_form_component(p['kemasan']) %>"
+                 target="_blank" style="background:var(--red);color:white;padding:.3rem .7rem;border-radius:6px;text-decoration:none;font-size:.78rem;font-weight:600;white-space:nowrap;">
+                Order
+              </a>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:2rem;text-align:center;">
+      <a href="https://wa.me/6282142078380?text=Halo%2C%20saya%20ingin%20tanya%20harga%20Nippon%20Paint" class="btn btn-wa" target="_blank">💬 Tanya Harga via WhatsApp</a>
+    </div>
+  </div>
+</section>

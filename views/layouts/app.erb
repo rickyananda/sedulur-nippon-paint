@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= @title || 'Toko SEDULUR - Dealer Resmi Nippon Paint Surabaya' %></title>
+  <meta name="description" content="Toko SEDULUR - Dealer Resmi Nippon Paint Surabaya. Cat tembok, waterproofing, cat kayu & besi dengan harga terbaik.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #c62828;
+      --red-dark: #8e0000;
+      --red-light: #ef5350;
+      --gold: #f9a825;
+      --gold-dark: #c17900;
+      --white: #ffffff;
+      --gray-50: #fafafa;
+      --gray-100: #f5f5f5;
+      --gray-200: #eeeeee;
+      --gray-400: #bdbdbd;
+      --gray-600: #757575;
+      --gray-800: #424242;
+      --gray-900: #212121;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+      --shadow-md: 0 4px 16px rgba(0,0,0,.10);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,.14);
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; color: var(--gray-900); background: var(--white); }
+
+    /* TOP BAR */
+    .topbar {
+      background: var(--red-dark);
+      color: rgba(255,255,255,.9);
+      font-size: .78rem;
+      padding: .45rem 1rem;
+      text-align: center;
+      letter-spacing: .02em;
+    }
+    .topbar a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .topbar a:hover { text-decoration: underline; }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky; top: 0; z-index: 1000;
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      padding: .75rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem;
+    }
+    .navbar-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+    .navbar-logo {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: var(--red); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 1rem; letter-spacing: -.5px;
+    }
+    .navbar-name { font-weight: 700; font-size: 1.1rem; color: var(--gray-900); line-height: 1.1; }
+    .navbar-name span { display: block; font-size: .65rem; font-weight: 400; color: var(--gray-600); }
+    .navbar-menu { display: flex; align-items: center; gap: .25rem; list-style: none; }
+    .navbar-menu a {
+      padding: .5rem .85rem; border-radius: 8px;
+      text-decoration: none; font-size: .88rem; font-weight: 500; color: var(--gray-800);
+      transition: all .2s;
+    }
+    .navbar-menu a:hover, .navbar-menu a.active { background: var(--red); color: white; }
+    .navbar-wa {
+      background: #25d366; color: white;
+      padding: .55rem 1.1rem; border-radius: 8px;
+      text-decoration: none; font-size: .85rem; font-weight: 600;
+      display: flex; align-items: center; gap: .4rem;
+      transition: background .2s;
+      white-space: nowrap;
+    }
+    .navbar-wa:hover { background: #128c7e; }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: .4rem; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--gray-800); margin: 5px 0; border-radius: 2px; transition: .3s; }
+
+    /* MOBILE NAV */
+    @media (max-width: 768px) {
+      .navbar { padding: .75rem 1rem; }
+      .hamburger { display: block; }
+      .navbar-menu {
+        display: none; position: absolute; top: 100%; left: 0; right: 0;
+        background: white; flex-direction: column; padding: 1rem;
+        box-shadow: var(--shadow-lg); gap: .25rem;
+      }
+      .navbar-menu.open { display: flex; }
+      .navbar-menu a { width: 100%; padding: .75rem 1rem; }
+      .navbar-wa { display: none; }
+    }
+
+    /* MAIN */
+    main { min-height: 60vh; }
+
+    /* FOOTER */
+    footer {
+      background: var(--gray-900); color: rgba(255,255,255,.8);
+      padding: 3rem 2rem 1.5rem;
+    }
+    .footer-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 2rem;
+    }
+    .footer-brand .logo {
+      display: inline-flex; align-items: center; gap: .6rem;
+      margin-bottom: 1rem; text-decoration: none;
+    }
+    .footer-brand .logo-box {
+      width: 40px; height: 40px; border-radius: 8px;
+      background: var(--red); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: .9rem;
+    }
+    .footer-brand .logo-text { font-weight: 700; font-size: 1.1rem; color: white; }
+    .footer-brand p { font-size: .83rem; line-height: 1.7; color: rgba(255,255,255,.6); }
+    .footer-col h4 { font-size: .9rem; font-weight: 600; color: white; margin-bottom: .85rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: .5rem; }
+    .footer-col ul li a { color: rgba(255,255,255,.6); text-decoration: none; font-size: .83rem; transition: color .2s; }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-col p { font-size: .83rem; color: rgba(255,255,255,.6); line-height: 1.8; }
+    .footer-bottom {
+      max-width: 1100px; margin: 2rem auto 0;
+      padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,.1);
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: .78rem; color: rgba(255,255,255,.4);
+    }
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { flex-direction: column; gap: .5rem; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    /* UTILITIES */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+    .section { padding: 5rem 1.5rem; }
+    .section-title { font-size: 2rem; font-weight: 700; color: var(--gray-900); margin-bottom: .5rem; }
+    .section-sub { font-size: 1rem; color: var(--gray-600); margin-bottom: 2.5rem; }
+    .badge {
+      display: inline-block; padding: .25rem .75rem; border-radius: 999px;
+      font-size: .72rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+    }
+    .badge-ultra { background: #fff3e0; color: #e65100; }
+    .badge-premium { background: #e8f5e9; color: #2e7d32; }
+    .badge-standar { background: #e3f2fd; color: #1565c0; }
+    .badge-ekonomis { background: #f3e5f5; color: #6a1b9a; }
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .75rem 1.75rem; border-radius: 10px;
+      font-size: .95rem; font-weight: 600; text-decoration: none;
+      cursor: pointer; border: none; transition: all .2s;
+    }
+    .btn-red { background: var(--red); color: white; }
+    .btn-red:hover { background: var(--red-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(198,40,40,.35); }
+    .btn-gold { background: var(--gold); color: var(--gray-900); }
+    .btn-gold:hover { background: var(--gold-dark); color: white; transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: white; border: 2px solid rgba(255,255,255,.6); }
+    .btn-outline:hover { background: rgba(255,255,255,.15); border-color: white; }
+    .btn-wa { background: #25d366; color: white; }
+    .btn-wa:hover { background: #128c7e; transform: translateY(-1px); }
+
+    /* FADE IN ANIMATION */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  📞 Order: <a href="tel:0313983518">(031) 398 3518</a> | 398 2342 | 398 2582 &nbsp;|&nbsp;
+  📱 <a href="https://wa.me/6282142078380">0821-4207-8380</a> | <a href="https://wa.me/6282142078381">0821-4207-8381</a>
+</div>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand">
+    <div class="navbar-logo">NP</div>
+    <div class="navbar-name">SEDULUR <span>Dealer Resmi Nippon Paint Surabaya</span></div>
+  </a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="navbar-menu" id="navMenu">
+    <li><a href="/" class="<%= request.path == '/' ? 'active' : '' %>">Beranda</a></li>
+    <li><a href="/produk" class="<%= request.path == '/produk' ? 'active' : '' %>">Produk</a></li>
+    <li><a href="/harga" class="<%= request.path == '/harga' ? 'active' : '' %>">Harga</a></li>
+    <li><a href="/tentang" class="<%= request.path == '/tentang' ? 'active' : '' %>">Tentang</a></li>
+    <li><a href="/kontak" class="<%= request.path == '/kontak' ? 'active' : '' %>">Kontak</a></li>
+  </ul>
+  <a href="https://wa.me/6282142078380" class="navbar-wa" target="_blank">
+    💬 WhatsApp
+  </a>
+</nav>
+
+<main>
+  <%= yield %>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="logo">
+        <div class="logo-box">NP</div>
+        <span class="logo-text">SEDULUR</span>
+      </a>
+      <p>Dealer resmi Nippon Paint di Surabaya sejak lama. Menyediakan produk cat berkualitas dengan harga terbaik dan pelayanan profesional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Produk</h4>
+      <ul>
+        <li><a href="/produk?kategori=Cat+Tembok+Eksterior">Cat Tembok Eksterior</a></li>
+        <li><a href="/produk?kategori=Cat+Tembok+Interior">Cat Tembok Interior</a></li>
+        <li><a href="/produk?kategori=Waterproofing">Waterproofing</a></li>
+        <li><a href="/produk?kategori=Cat+Kayu">Cat Kayu & Besi</a></li>
+        <li><a href="/produk?kategori=Cat+Special+Effect">Special Effect</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Layanan</h4>
+      <ul>
+        <li><a href="#">Jasa Tinting</a></li>
+        <li><a href="#">Konsultasi Warna</a></li>
+        <li><a href="#">Pengiriman Surabaya</a></li>
+        <li><a href="#">Supply Proyek</a></li>
+        <li><a href="/harga">Cek Harga</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <p>
+        📍 Jl. Raya Menganti Karangan No. 99, Surabaya<br><br>
+        📞 (031) 398 3518<br>
+        📱 0821-4207-8380<br>
+        📱 0821-4207-8381
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Toko SEDULUR. Dealer Resmi Nippon Paint Surabaya.</span>
+    <span>Harga berlaku per 11 Mei 2026 · Incl. PPN 11%</span>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('open');
+  }
+  // Fade in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

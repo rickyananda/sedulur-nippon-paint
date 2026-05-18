@@ -1,0 +1,186 @@
+<style>
+.page-hero { background: linear-gradient(135deg, var(--red-dark), var(--red)); color: white; padding: 3.5rem 1.5rem; text-align: center; }
+.page-hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: .5rem; }
+.page-hero p { opacity: .85; }
+.kontak-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; max-width: 1100px; margin: 0 auto; }
+.kontak-info-card { background: white; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200); }
+.kontak-info-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--red); }
+.kontak-item { display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: flex-start; }
+.kontak-item-icon { width: 42px; height: 42px; border-radius: 10px; background: #ffebee; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+.kontak-item-text strong { display: block; font-size: .88rem; font-weight: 600; margin-bottom: .2rem; }
+.kontak-item-text span { font-size: .83rem; color: var(--gray-600); line-height: 1.6; }
+.kontak-item-text a { color: var(--red); text-decoration: none; font-weight: 500; }
+.kontak-item-text a:hover { text-decoration: underline; }
+.wa-buttons { display: flex; flex-direction: column; gap: .75rem; margin-top: 1.5rem; }
+.wa-btn {
+  display: flex; align-items: center; gap: .75rem;
+  background: #25d366; color: white; padding: 1rem 1.25rem;
+  border-radius: var(--radius); text-decoration: none; font-weight: 600;
+  transition: all .2s;
+}
+.wa-btn:hover { background: #128c7e; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37,211,102,.3); }
+.wa-btn .wa-icon { font-size: 1.5rem; }
+.wa-btn-text strong { display: block; font-size: .9rem; }
+.wa-btn-text span { font-size: .78rem; opacity: .85; }
+.order-form { background: white; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200); }
+.order-form h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--red); }
+.form-group { margin-bottom: 1.1rem; }
+.form-group label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .4rem; color: var(--gray-800); }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: .7rem 1rem; border: 2px solid var(--gray-200);
+  border-radius: 8px; font-size: .9rem; font-family: inherit;
+  transition: border-color .2s; outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--red); }
+.form-group textarea { resize: vertical; min-height: 80px; }
+.jam-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 1100px; margin: 2rem auto 0; }
+.jam-card { background: white; border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200); text-align: center; }
+.jam-card h4 { font-size: .95rem; font-weight: 700; margin-bottom: .5rem; }
+.jam-card p { font-size: .85rem; color: var(--gray-600); }
+.jam-card .jam { font-size: 1.1rem; font-weight: 700; color: var(--red); margin-top: .25rem; }
+@media (max-width: 768px) {
+  .kontak-grid { grid-template-columns: 1fr; }
+  .jam-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<section class="page-hero">
+  <h1>📞 Kontak Kami</h1>
+  <p>Siap membantu Anda — hubungi kami sekarang</p>
+</section>
+
+<section class="section" style="background:var(--gray-50);">
+  <div class="kontak-grid">
+    <!-- Info Kontak -->
+    <div class="fade-in">
+      <div class="kontak-info-card" style="margin-bottom:1.5rem;">
+        <h3>📍 Informasi Toko</h3>
+        <div class="kontak-item">
+          <div class="kontak-item-icon">📍</div>
+          <div class="kontak-item-text">
+            <strong>Alamat</strong>
+            <span>Jl. Raya Menganti Karangan No. 99<br>Surabaya, Jawa Timur</span>
+          </div>
+        </div>
+        <div class="kontak-item">
+          <div class="kontak-item-icon">📞</div>
+          <div class="kontak-item-text">
+            <strong>Telepon</strong>
+            <span>
+              <a href="tel:0313983518">(031) 398 3518</a><br>
+              <a href="tel:0313982342">(031) 398 2342</a><br>
+              <a href="tel:0313982582">(031) 398 2582</a>
+            </span>
+          </div>
+        </div>
+        <div class="kontak-item">
+          <div class="kontak-item-icon">📠</div>
+          <div class="kontak-item-text">
+            <strong>Fax & CS</strong>
+            <span>Fax: (031) 398 2285<br>CS: (031) 398 2244</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kontak-info-card">
+        <h3>💬 Order via WhatsApp</h3>
+        <p style="font-size:.85rem;color:var(--gray-600);margin-bottom:1rem;">Cara tercepat untuk order dan tanya harga</p>
+        <div class="wa-buttons">
+          <a href="https://wa.me/6282142078380?text=Halo%20Toko%20SEDULUR%2C%20saya%20ingin%20tanya%20produk%20Nippon%20Paint" class="wa-btn" target="_blank">
+            <span class="wa-icon">💬</span>
+            <div class="wa-btn-text">
+              <strong>0821-4207-8380</strong>
+              <span>WhatsApp 1 — Klik untuk chat</span>
+            </div>
+          </a>
+          <a href="https://wa.me/6282142078381?text=Halo%20Toko%20SEDULUR%2C%20saya%20ingin%20tanya%20produk%20Nippon%20Paint" class="wa-btn" target="_blank">
+            <span class="wa-icon">💬</span>
+            <div class="wa-btn-text">
+              <strong>0821-4207-8381</strong>
+              <span>WhatsApp 2 — Klik untuk chat</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Order -->
+    <div class="order-form fade-in">
+      <h3>📝 Form Order / Pertanyaan</h3>
+      <p style="font-size:.83rem;color:var(--gray-600);margin-bottom:1.5rem;">Isi form di bawah, kami akan redirect ke WhatsApp</p>
+      <form action="/order" method="post">
+        <div class="form-group">
+          <label>Nama Anda *</label>
+          <input type="text" name="nama" placeholder="Contoh: Budi Santoso" required>
+        </div>
+        <div class="form-group">
+          <label>Produk yang Diminati *</label>
+          <select name="produk" required>
+            <option value="">-- Pilih Produk --</option>
+            <option>Weatherbond Advance-16</option>
+            <option>Weatherbond Ultimate</option>
+            <option>Weatherbond Solareflect</option>
+            <option>Weatherbond Max</option>
+            <option>Weatherbond</option>
+            <option>Spot-less Plus Matt</option>
+            <option>Spot-less Plus Sheen</option>
+            <option>Spot-less</option>
+            <option>Easywash</option>
+            <option>Flaw-less</option>
+            <option>Satin Glo</option>
+            <option>Vinilex Gloss</option>
+            <option>Vinilex Exterior</option>
+            <option>Vinilex (Silver-Ion)</option>
+            <option>Vinilex Tinting</option>
+            <option>Elastex FiberFlex PU</option>
+            <option>Elastex Waterproof 3in1</option>
+            <option>Woodstain</option>
+            <option>Bodelac 2-in-1</option>
+            <option>Nippon 9000 Gloss</option>
+            <option>Timbershade</option>
+            <option>Momento Series</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Kemasan</label>
+          <select name="kemasan">
+            <option>0.9L</option>
+            <option>1Kg</option>
+            <option>2.5L</option>
+            <option>2.7Kg</option>
+            <option>4Kg</option>
+            <option>5Kg</option>
+            <option>12.5L</option>
+            <option>15L</option>
+            <option>16Kg</option>
+            <option>20L</option>
+            <option>20Kg</option>
+            <option>25Kg</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Jumlah</label>
+          <input type="text" name="jumlah" placeholder="Contoh: 5 kaleng">
+        </div>
+        <button type="submit" class="btn btn-wa" style="width:100%;justify-content:center;font-size:1rem;">
+          💬 Kirim via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Jam Operasional -->
+  <div class="jam-grid">
+    <div class="jam-card fade-in">
+      <h4>🕐 Jam Operasional</h4>
+      <p>Senin – Sabtu</p>
+      <div class="jam">08.00 – 17.00 WIB</div>
+    </div>
+    <div class="jam-card fade-in">
+      <h4>📱 WhatsApp</h4>
+      <p>Senin – Sabtu</p>
+      <div class="jam">08.00 – 20.00 WIB</div>
+    </div>
+  </div>
+</section>

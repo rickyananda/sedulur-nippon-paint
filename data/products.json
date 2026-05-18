@@ -1,0 +1,122 @@
+[
+  {
+    "id": "weatherbond-advance-16",
+    "nama": "Weatherbond Advance-16",
+    "kategori": "Cat Tembok Eksterior",
+    "tier": "Ultra Premium",
+    "deskripsi": "Cat tahan cuaca ultra premium dengan perlindungan hingga 16 tahun. Teknologi terdepan untuk eksterior rumah Anda.",
+    "fitur": ["Perlindungan 16 tahun", "Anti-cuaca ekstrem", "Anti-jamur & lumut", "Warna tahan lama"],
+    "kemasan": ["0.9L", "20L"],
+    "icon": "🛡️"
+  },
+  {
+    "id": "weatherbond-ultimate",
+    "nama": "Weatherbond Ultimate",
+    "kategori": "Cat Tembok Eksterior",
+    "tier": "Ultra Premium",
+    "deskripsi": "Perlindungan eksterior ultimate dengan teknologi terkini. Tahan cuaca ekstrem hingga 16 tahun.",
+    "fitur": ["Perlindungan 16 tahun", "Ultra tahan cuaca", "Anti-retak", "Warna brilliant"],
+    "kemasan": ["0.9L", "2.5L", "15L"],
+    "icon": "⭐"
+  },
+  {
+    "id": "weatherbond-solareflect",
+    "nama": "Weatherbond Solareflect",
+    "kategori": "Cat Tembok Eksterior",
+    "tier": "Ultra Premium",
+    "deskripsi": "Teknologi solar reflect memantulkan panas matahari, menjaga rumah tetap sejuk dan hemat energi.",
+    "fitur": ["Perlindungan 12 tahun", "Pantulkan panas matahari", "Hemat energi", "Anti-cuaca"],
+    "kemasan": ["0.9L", "2.5L", "15L"],
+    "icon": "☀️"
+  },
+  {
+    "id": "weatherbond-max",
+    "nama": "Weatherbond Max",
+    "kategori": "Cat Tembok Eksterior",
+    "tier": "Ultra Premium",
+    "deskripsi": "Perlindungan maksimal untuk eksterior dengan ketahanan 8 tahun dan warna yang tetap cerah.",
+    "fitur": ["Perlindungan 8 tahun", "Anti-cuaca", "Anti-jamur", "Warna cerah tahan lama"],
+    "kemasan": ["0.9L", "20L"],
+    "icon": "💪"
+  },
+  {
+    "id": "spot-less-plus",
+    "nama": "Spot-less Plus",
+    "kategori": "Cat Tembok Interior",
+    "tier": "Premium",
+    "deskripsi": "Cat anti-noda, anti-kuman, dan menetralisir formaldehida. Pilihan terbaik untuk ruangan keluarga.",
+    "fitur": ["Anti-noda", "Anti-kuman", "Netralisir formaldehida", "Matt & Sheen finish"],
+    "kemasan": ["0.9L", "2.5L", "20L"],
+    "icon": "✨"
+  },
+  {
+    "id": "easywash",
+    "nama": "Easywash",
+    "kategori": "Cat Tembok Interior",
+    "tier": "Premium",
+    "deskripsi": "Cat premium mudah dibersihkan dengan ketahanan sikat hingga 10.000 kali. Praktis untuk keluarga aktif.",
+    "fitur": ["Tahan sikat 10.000x", "Mudah dibersihkan", "Anti-noda", "Warna tahan lama"],
+    "kemasan": ["0.9L", "2.5L", "20L"],
+    "icon": "🧽"
+  },
+  {
+    "id": "elastex-waterproofing",
+    "nama": "Elastex Waterproofing",
+    "kategori": "Waterproofing",
+    "tier": "Premium",
+    "deskripsi": "Cat pelapis anti-bocor elastis dengan perlindungan hingga 8 tahun. Solusi terbaik untuk atap dan dinding bocor.",
+    "fitur": ["Anti-bocor", "Perlindungan 8 tahun", "Elastis", "Tahan UV"],
+    "kemasan": ["1Kg", "4Kg", "20Kg"],
+    "icon": "💧"
+  },
+  {
+    "id": "vinilex",
+    "nama": "Vinilex Series",
+    "kategori": "Cat Tembok Interior",
+    "tier": "Ekonomis",
+    "deskripsi": "Cat tembok #1 di Indonesia. Pilihan ekonomis dengan kualitas terpercaya untuk seluruh ruangan.",
+    "fitur": ["Harga terjangkau", "Kualitas terpercaya", "Pilihan warna lengkap", "Anti-kuman"],
+    "kemasan": ["1Kg", "5Kg", "25Kg"],
+    "icon": "🏠"
+  },
+  {
+    "id": "woodstain",
+    "nama": "Woodstain",
+    "kategori": "Cat Kayu",
+    "tier": "Premium",
+    "deskripsi": "Cat varnish water-based untuk kayu interior dan eksterior. Tampilkan keindahan serat kayu alami.",
+    "fitur": ["Water-based", "Interior & eksterior", "Tampilkan serat kayu", "Anti-jamur"],
+    "kemasan": ["0.9L", "2.5L", "20L"],
+    "icon": "🪵"
+  },
+  {
+    "id": "bodelac-2in1",
+    "nama": "Bodelac 2-in-1",
+    "kategori": "Cat Besi",
+    "tier": "Premium",
+    "deskripsi": "Cat dasar sekaligus cat akhir anti-karat dalam 1 kemasan. Hemat waktu dan biaya pengecatan besi.",
+    "fitur": ["2-in-1 formula", "Anti-karat", "Gloss & Matt finish", "Tahan lama"],
+    "kemasan": ["1Kg", "2.7Kg", "16Kg"],
+    "icon": "🔩"
+  },
+  {
+    "id": "momento",
+    "nama": "Momento Series",
+    "kategori": "Cat Special Effect",
+    "tier": "Ultra Premium",
+    "deskripsi": "Cat special effect dengan tampilan mewah. Elegant, Sparkle, Cloud, dan Frost series untuk interior eksklusif.",
+    "fitur": ["Special effect", "Tampilan mewah", "Berbagai tekstur", "Eksklusif"],
+    "kemasan": ["1L"],
+    "icon": "🖼️"
+  },
+  {
+    "id": "satin-glo",
+    "nama": "Satin Glo",
+    "kategori": "Cat Tembok Interior",
+    "tier": "Premium",
+    "deskripsi": "Cat dengan hasil halus kemilau dan bisa dijadikan papan tulis. Unik dan fungsional untuk ruang belajar.",
+    "fitur": ["Hasil kemilau", "Bisa jadi papan tulis", "Anti-noda", "Mudah dibersihkan"],
+    "kemasan": ["0.9L", "2.5L", "20L"],
+    "icon": "📝"
+  }
+]
