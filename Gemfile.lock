@@ -27,7 +27,6 @@ PLATFORMS
 DEPENDENCIES
   json
   puma (~> 6.0)
-  rack (~> 3.0)
   sinatra (~> 3.0)
 
 RUBY VERSION
