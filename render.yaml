@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sedulur-nippon-paint
+    runtime: ruby
+    buildCommand: bundle install
+    startCommand: bundle exec puma -p $PORT
+    envVars:
+      - key: RACK_ENV
+        value: production
